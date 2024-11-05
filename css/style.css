@@ -1,0 +1,704 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Roboto", sans-serif;
+}
+
+h1{font-size: 3.5em;}
+h2{font-size: 2.5em;}
+h3{font-size: 2em;}
+p{font-size: 1em;}
+ul{list-style: none;}
+li{font-size: 1.25em;}
+a{text-decoration: none;
+color: black;}
+
+
+header{
+    background-color: rgb(216, 11, 11);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+
+.navbar a:hover{
+    color: aliceblue;
+}
+
+.logo{
+    color: aliceblue;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.headerBajo{
+    display: none;
+}
+.sectionHorarios{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    place-items: center;
+    background-color: whitesmoke;
+}
+
+.sectionHorarios img{
+    object-fit: contain;
+    margin-top: 20px;
+    height: 100px;
+    width: 100%;
+}
+
+.primerasOfertas{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2,1fr);
+    background-color:whitesmoke;
+    padding-top: 20px;
+}
+
+.ofertasGrid{
+    justify-self: center;
+    align-self: center;
+    z-index: 5;
+}
+
+.ofertasGrid:hover{
+    transform: scale(1.05);
+}
+
+
+.ofertasGrid h2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.ofertasGrid p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+.primerasOfertas img{
+    height: 100px;
+}
+
+
+.primerasOfertas h2{
+    font-size: 20px;
+    color: #4b4b4b;
+    
+}
+
+.primerasOfertas p{
+    color: #4b4b4b;
+}
+
+.sectionOfertas{
+    flex-direction: column;
+    background: linear-gradient(to bottom,whitesmoke, #ffffff);
+}
+
+.sectionOfertas h2{
+    color: red;
+    padding-top: 25px;
+    margin-left: 5px;
+}
+
+.sectionOfertas p{
+    margin-left: 5px;
+    margin-bottom: 25px;
+}
+
+
+.sectionProductos{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2,1fr);
+    font-size: 10px;
+}
+
+.imgSectionProductos{
+    justify-self: center;
+    align-self: center;
+    border: 1px solid rgba(0, 0, 0, 0.1); /* Borde sutil */
+    padding: 5px;
+    margin: 3px;
+    border-radius: 8px; /* Esquinas redondeadas */
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+.sectionProductos img{
+    height: 140px;
+}
+
+
+
+.sectionProductos h2{
+    color: red;
+    font-size: 15px;
+}
+
+.sectionProductos h3{
+    font-size: 10px;
+    color: #666666;
+}
+
+.sectionProductos p{
+    text-decoration: line-through;
+    color: #66666694;
+    font-size: 8px;
+}
+
+.sectionProductos h4{
+    font-size: 10px;
+    color: red;
+}
+
+.sectionProductos2{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2,1fr);
+    font-size: 10px;
+}
+
+.imgSectionProductos2{
+    justify-self: center;
+    align-self: center;
+    border: 1px solid rgba(0, 0, 0, 0.1); /* Borde sutil */
+    padding: 5px;
+    margin: 3px;
+    border-radius: 8px; /* Esquinas redondeadas */
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+.sectionProductos2 img{
+    height: 140px;
+}
+
+
+
+.sectionProductos2 h2{
+    color: red;
+    font-size: 15px;
+}
+
+.sectionProductos2 h3{
+    font-size: 10px;
+    color: #666666;
+}
+
+.sectionProductos2 p{
+    text-decoration: line-through;
+    color: #66666694;
+    font-size: 8px;
+}
+
+.sectionProductos2 h4{
+    font-size: 10px;
+    color: red;
+}
+
+.footerRojo{
+    background-color: rgb(216, 11, 11);
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    height: 30px;
+    align-items: center;
+}
+
+.footerRojo h2{
+    font-size: 20px;
+    color: aliceblue;
+}
+
+footer h3{
+    font-size: 10px;
+}
+
+footer p{
+    font-size: 8px;
+    color: rgba(148, 148, 148, 0.726);
+}
+
+.footerNew{
+    margin: 10px;
+}
+
+.footerNew a{
+    margin-top: 5px;
+}
+
+.boton {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: rgb(216, 11, 11); /* Color de fondo */
+    color: white; /* Color del texto */
+    text-decoration: none; /* Sin subrayado */
+    border-radius: 5px; /* Bordes redondeados */
+    font-size: 16px; /* Tamaño de la fuente */
+    border: none; /* Sin borde */
+    cursor: pointer; /* Cambia el cursor al pasar el mouse */
+}
+
+.boton:hover {
+    background-color: rgb(216, 11, 11); /* Color al pasar el mouse */
+}
+
+@media (min-width:768px) {
+
+    header{
+        height: 50px;
+        display: flex;
+        justify-content:center;
+        align-items: center;
+    }
+
+    header div{
+        display: flex;
+        
+    }
+
+    header p{
+        padding-right: 70px;
+    }
+
+    header a{
+    padding: 10px;
+    }
+    .sectionHorarios{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        place-items: center;
+    }
+    
+    .sectionHorarios img{
+        object-fit: cover;
+        margin-top: 40px;
+        height: 150px;
+        width: 100%;
+    }
+    .primerasOfertas{
+        display: grid;
+        grid-template-columns: repeat(4,140px);
+        grid-template-rows: repeat(1,1fr);
+        justify-content: center;
+    }
+    .ofertasGrid{
+        margin-top: 25px;
+    }
+
+    .ofertasGrid img{
+        height: 120px;
+    }
+
+    .ofertasGrid h2{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+    .ofertasGrid p{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .tituloOfertas{
+        padding-left: 130px;
+    }
+
+    .sectionProductos{
+        display: grid;
+        grid-template-columns: repeat(2,250px);
+        grid-template-rows: repeat(2,1fr);
+        font-size: 10px;
+        justify-content: center;
+        gap: 5px;
+    }
+    
+    .sectionProductos img{
+        height: 200px;
+    }
+
+    .imgSectionProductos{
+        justify-self: center;
+        border: 1px solid rgba(0, 0, 0, 0.1); /* Borde sutil */
+        padding: 20px;
+        margin: 10px;
+        border-radius: 8px; /* Esquinas redondeadas */
+        background-color: #fff;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    }
+
+    .imgSectionProductos h3{
+        font-size: 13px;
+    }
+    .imgSectionProductos p{
+        font-size: 13px;
+    }
+    .imgSectionProductos h4{
+        font-size: 20px;
+    }
+
+    .sectionProductos2{
+        display: grid;
+        grid-template-columns: repeat(2,250px);
+        grid-template-rows: repeat(2,1fr);
+        font-size: 10px;
+        justify-content: center;
+        gap: 5px;
+    }
+    .sectionProductos2 img{
+        height: 200px;
+    }
+
+    .imgSectionProductos2{
+        border: 1px solid rgba(0, 0, 0, 0.1); /* Borde sutil */
+        padding: 20px;
+        margin: 10px;
+        border-radius: 8px; /* Esquinas redondeadas */
+        background-color: #fff;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    }
+
+    .imgSectionProductos2 h3{
+        font-size: 13px;
+    }
+    .imgSectionProductos2 p{
+        font-size: 13px;
+    }
+    .imgSectionProductos2 h4{
+        font-size: 20px;
+    }
+    
+    .footerNew{
+        display: flex;
+    }
+
+    .footerNew div{
+        padding-left: 40px;
+        }
+
+
+        
+    @media (min-width:1024px){
+
+        header{
+            height: 50px;
+            display: flex;
+            justify-content:center;
+            align-items: center;
+            font-size: 20px;
+        }
+        .sectionHorarios{
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr;
+            place-items: center;
+        }
+        
+        .sectionHorarios img{
+            object-fit: cover;
+            margin-top: 40px;
+            height: 200px;
+            width: 100%;
+        }
+        .primerasOfertas{
+            display: grid;
+            grid-template-columns: repeat(4,160px);
+            grid-template-rows: repeat(1,1fr);
+            justify-content: center;
+        }
+
+        .ofertasGrid img{
+            height: 125px;
+        }   
+
+        .ofertasGrid h2{
+            font-size: 30px;
+        }
+        .ofertasGrid p{
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+
+        .sectionProductos{
+            display: grid;
+            grid-template-columns: repeat(4,220px);
+            grid-template-rows: repeat(1,1fr);
+            font-size: 10px;
+        }
+
+        .imgSectionProductos{
+            
+            width:210px ;
+        }
+        
+        .sectionProductos img{
+            height: 130px;
+        }
+        .imgSectionProductos h3{
+            font-size: 15px;
+        }
+        .imgSectionProductos p{
+            font-size: 15px;
+        }
+        .imgSectionProductos h4{
+            font-size: 20px;
+        }
+        .sectionProductos2{
+            display: grid;
+            grid-template-columns: repeat(4,220px);
+            grid-template-rows: repeat(1,1fr);
+            font-size: 10px;
+        }
+
+        .imgSectionProductos2{
+            
+            width:210px ;
+        }
+
+        .sectionProductos2 img{
+            height: 130px;
+        }
+        .imgSectionProductos2 h3{
+            font-size: 15px;
+        }
+        .imgSectionProductos2 p{
+            font-size: 15px;
+        }
+        .imgSectionProductos2 h4{
+            font-size: 20px;
+        }
+
+        .footerNew{
+            display: flex;
+        }
+
+        .footerNew div{
+        padding-left: 60px;
+        }
+        
+    }
+    @media(min-width:1440px){
+        header{
+            height: 50px;
+            display: flex;
+            justify-content:center;
+            align-items: center;
+            font-size: 20px;
+        }
+        .headerBajo{
+            display: block;
+            display: flex;
+            font-size: 20px;
+            justify-content: center;
+            align-items: center;
+            padding-top: 10px;
+            padding-left: 100px;
+
+        }
+        .sectionHorarios{
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr;
+            place-items: center;
+        }
+        
+        .sectionHorarios img{
+            object-fit: cover;
+            margin-top: 40px;
+            height: 300px;
+            width: 100%;
+        }
+        .primerasOfertas{
+            display: grid;
+            grid-template-columns: repeat(4,220px);
+            grid-template-rows: repeat(1,1fr);
+            justify-content: center;
+        }
+
+        .ofertasGrid img{
+            height: 150px;
+        }   
+
+        .ofertasGrid h2{
+            font-size: 30px;
+        }
+        .ofertasGrid p{
+            font-size: 20px;
+            font-weight: bold;
+        }
+        .tituloOfertas{
+            padding-right: 300px;
+        }
+        .sectionProductos{
+            display: grid;
+            grid-template-columns: repeat(4,270px);
+            grid-template-rows: repeat(1,1fr);
+            font-size: 10px;
+        }
+        .imgSectionProductos{
+            
+            width:260px ;
+        }
+        
+        .sectionProductos img{
+            height: 160px;
+        }
+        .imgSectionProductos h3{
+            font-size: 18px;
+        }
+        .imgSectionProductos p{
+            font-size: 18px;
+        }
+        .imgSectionProductos h4{
+            font-size: 25px;
+        }
+        .imgSectionProductos2{
+            
+            width:260px ;
+        }
+        
+        .sectionProductos2 img{
+            height: 160px;
+        }
+        .sectionProductos2{
+            display: grid;
+            grid-template-columns: repeat(4,270px);
+            grid-template-rows: repeat(1,1fr);
+            font-size: 10px;
+        }
+        .imgSectionProductos2 h3{
+            font-size: 18px;
+        }
+        .imgSectionProductos2 p{
+            font-size: 18px;
+        }
+        .imgSectionProductos2 h4{
+            font-size: 25px;
+        }
+
+        .footerNew div{
+            padding-left: 90px;
+        }
+        
+        .footerNew h3{
+        font-size: 15px;
+        }
+
+        .footerNew p{
+            font-size: 10px;
+        }
+
+
+
+    }
+    @media (min-width:2560px){
+        
+        header{
+            height: 50px;
+            display: flex;
+            justify-content:center;
+            align-items: center;
+            font-size: 30px;
+        }
+
+        .primerasOfertas{
+            display: grid;
+            grid-template-columns: repeat(4,300px);
+            grid-template-rows: repeat(1,1fr);
+            justify-content: center;
+        }
+
+        .ofertasGrid img{
+            height: 230px;
+        }   
+
+        .ofertasGrid h2{
+            font-size: 50px;
+        }
+        .ofertasGrid p{
+            font-size: 25px;
+            font-weight: bold;
+        }
+
+
+        .sectionProductos img{
+            height: 250px;
+        }
+        .sectionProductos{
+            display: grid;
+            grid-template-columns: repeat(4,420px);
+            grid-template-rows: repeat(1,1fr);
+            font-size: 10px;
+        }
+        .imgSectionProductos{
+            
+            width:400px ;
+        }
+
+        .imgSectionProductos h2{
+            font-size: 20px;
+        }
+        .imgSectionProductos h3{
+            font-size: 30px;
+        }
+        .imgSectionProductos p{
+            font-size: 25px;
+        }
+        .imgSectionProductos h4{
+            font-size: 40px;
+        }
+
+        .sectionProductos2 img{
+            height: 250px;
+        }
+        .sectionProductos2{
+            display: grid;
+            grid-template-columns: repeat(4,420px);
+            grid-template-rows: repeat(1,1fr);
+            font-size: 10px;
+        }
+        .imgSectionProductos2{
+            
+            width:400px ;
+        }
+        .imgSectionProductos2 h3{
+            font-size: 30px;
+        }
+        .imgSectionProductos2 h2{
+            font-size: 20px;
+        }
+        .imgSectionProductos2 p{
+            font-size: 25px;
+        }
+        .imgSectionProductos2 h4{
+            font-size: 40px;
+        }
+        .footerRojo h2{
+            font-size: 30px;
+        }
+        .footerNew h3{
+            font-size: 25px;
+            }
+            .footerNew p{
+                font-size: 20px;
+            }
+    
+    }
+}
